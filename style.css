@@ -17,7 +17,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #5e2ca5; /* roxo escuro */
+  background-color: #5e2ca5;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #bb86fc; /* roxo claro */
+  color: #bb86fc;
 }
 
 .logo {
@@ -77,9 +77,8 @@ body {
 section {
   padding: 3rem 2rem;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
   background: white;
-  margin-top: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
@@ -93,7 +92,7 @@ h2 {
 /* Projetos */
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -102,13 +101,13 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #fafafa;
-  box-shadow: 2px 2px 5px rgba(94,44,165,0.1);
+  box-shadow: 2px 2px 5px rgba(94, 44, 165, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 4px 8px 15px rgba(94,44,165,0.3);
+  box-shadow: 4px 8px 15px rgba(94, 44, 165, 0.3);
 }
 
 .project-card h3 {
