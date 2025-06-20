@@ -8,49 +8,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Arthur Lopes</div>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+
+<header class="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Arthur Lopes</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#sobre" class="nav__link active-link">Sobre</a></li>
+        <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+        <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero">
-      <!-- Use um link externo para a imagem, ou envie a imagem para pasta img -->
-      <img src="imagens/arthur.jpg" alt="Foto do Arthur" class="profile-pic" />
-      <h1>Arthur Lopes de Freitas</h1>
-      <p>17 anos - Apaixonado por esportes, música e tecnologia</p>
-    </section>
-
-    <section id="sobre" class="about">
-      <h2>Sobre mim</h2>
-      <p>Filho único, moro com meus pais. Gosto muito de futebol, música e conhecer coisas novas.</p>
-    </section>
-
-    <section id="projetos" class="projects">
-      <h2>Projetos</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Meu site pessoal</h3>
-          <p>Um site simples que mostra meu portfólio e minhas habilidades.</p>
-          <a href="https://github.com/ArthurLF7/portfolio-arthur" target="_blank" class="btn">Ver no GitHub</a>
-        </div>
+<main class="main">
+  <section class="home" id="home">
+    <div class="home__container container grid">
+      <div class="home__content">
+        <h1 class="home__title">Arthur Lopes</h1>
+        <h3 class="home__subtitle">Apaixonado por esportes, música e tecnologia</h3>
+        <p class="home__description">Tenho 17 anos, adoro futebol e estou sempre buscando aprender coisas novas.</p>
       </div>
-    </section>
+      <div class="home__img">
+        <img src="imagens/arthur.jpg" alt="Foto do Arthur" />
+      </div>
+    </div>
+  </section>
 
-    <section id="contato" class="contact">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:freitasarthur147@gmail.com">freitasarthur147@gmail.com</a></p>
-    </section>
-  </main>
+  <section class="about section" id="sobre">
+    <h2 class="section__title">Sobre mim</h2>
+    <p class="section__description">Sou filho único, moro com meus pais e amo esportes, música e desafios.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Arthur Lopes de Freitas</p>
-  </footer>
+  <section class="projects section" id="projetos">
+    <h2 class="section__title">Projetos</h2>
+    <div class="projects__container container grid">
+      <article class="project__card">
+        <h3 class="project__title">Meu site pessoal</h3>
+        <p class="project__description">Um site simples mostrando minhas habilidades.</p>
+        <a href="https://github.com/ArthurLF7/portfolio-arthur" target="_blank" class="button">Ver no GitHub</a>
+      </article>
+      <!-- Você pode adicionar mais cards aqui -->
+    </div>
+  </section>
+
+  <section class="contact section" id="contato">
+    <h2 class="section__title">Contato</h2>
+    <p class="section__description">Email: <a href="mailto:freitasarthur147@gmail.com">freitasarthur147@gmail.com</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2025 Arthur Lopes de Freitas</p>
+</footer>
+
 </body>
 </html>
