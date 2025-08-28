@@ -1,227 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio Arthur Lopes</title>
+  <title>Portfólio - Arthur Lopes</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header class="header">
-  <nav class="nav container">
-    <a href="#" class="nav__logo">Arthur Lopes</a>
+  <!-- Botão de Acessibilidade -->
+  <div id="botao-acessibilidade" aria-label="Botão de Acessibilidade" aria-expanded="false" tabindex="0">
+    ⚙️
+  </div>
 
-    <div class="nav__menu" id="nav-menu">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#sobre" class="nav__link active-link">Sobre</a></li>
-        <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
-        <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <ul id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+    <li><button id="alterna-contraste" aria-pressed="false">Alto contraste</button></li>
+    <li><button id="aumentar-fonte">Aumentar fonte</button></li>
+    <li><button id="diminuir-fonte">Diminuir fonte</button></li>
+  </ul>
 
-<main class="main">
-  <section class="home" id="home">
-    <div class="home__container container grid">
-      <div class="home__content">
-        <h1 class="home__title">Arthur Lopes</h1>
-        <h3 class="home__subtitle">Apaixonado por esportes, música e tecnologia</h3>
-        <p class="home__description">Tenho 17 anos, adoro futebol e estou sempre buscando aprender coisas novas.</p>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Arthur Lopes</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#sobre" class="nav__link active-link">Sobre</a></li>
+          <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
       </div>
-      <div class="home__img">
-        <img src="imagens/arthur.jpg" alt="Foto do Arthur" />
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <h1 class="home__title">Arthur Lopes</h1>
+          <h3 class="home__subtitle">Apaixonado por esportes, música e tecnologia</h3>
+          <p class="home__description">Tenho 17 anos, adoro futebol e estou sempre buscando aprender coisas novas.</p>
+        </div>
+        <div class="home__img">
+          <img src="imagens/arthur.jpg" alt="Foto do Arthur sorrindo" />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="about section" id="sobre">
-    <h2 class="section__title">Sobre mim</h2>
-    <p class="section__description">Sou filho único, moro com meus pais e amo esportes, música e desafios.</p>
-  </section>
+    <!-- Sobre -->
+    <section class="about section" id="sobre">
+      <h2 class="section__title">Sobre mim</h2>
+      <p class="section__description">
+        Sou filho único, moro com meus pais e amo esportes, música e desafios.
+      </p>
+    </section>
 
-  <section class="projects section" id="projetos">
-    <h2 class="section__title">Projetos</h2>
-    <div class="projects__container container grid">
-      <article class="project__card">
-        <h3 class="project__title">Meu site pessoal</h3>
-        <p class="project__description">Um site simples mostrando minhas habilidades.</p>
-        <a href="https://github.com/ArthurLF7/portfolio-arthur" target="_blank" class="button">Ver no GitHub</a>
-      </article>
-      <!-- Você pode adicionar mais cards aqui -->
-    </div>
-  </section>
+    <!-- Projetos -->
+    <section class="projects section" id="projetos">
+      <h2 class="section__title">Projetos</h2>
+      <div class="projects__container container grid">
+        <article class="project__card">
+          <h3 class="project__title">Meu site pessoal</h3>
+          <p class="project__description">Um site simples mostrando minhas habilidades.</p>
+          <a href="https://github.com/ArthurLF7/portfolio-arthur" target="_blank" class="button">Ver no GitHub</a>
+        </article>
+        <!-- Mais projetos podem ser adicionados aqui -->
+      </div>
+    </section>
 
-  <section class="contact section" id="contato">
-    <h2 class="section__title">Contato</h2>
-    <p class="section__description">Email: <a href="mailto:freitasarthur147@gmail.com">freitasarthur147@gmail.com</a></p>
-  </section>
-</main>
+    <!-- Contato -->
+    <section class="contact section" id="contato">
+      <h2 class="section__title">Contato</h2>
+      <p class="section__description">
+        Email: <a href="mailto:freitasarthur147@gmail.com">freitasarthur147@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
-<footer class="footer">
-  <p>© 2025 Arthur Lopes de Freitas</p>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Arthur Lopes de Freitas | Feito com ♥</p>
+  </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
-/* Importando fonte */
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  transition: all 0.3s ease;
-}
-
-/* ===== HEADER ===== */
-.header {
-  background: #222;
-  color: #fff;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__logo {
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.nav__menu {
-  display: flex;
-}
-
-.nav__list {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav__link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-.nav__link:hover,
-.active-link {
-  color: #ff9800;
-}
-
-/* ===== HOME ===== */
-.home__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.home__title {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.home__subtitle {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* ===== SECTIONS ===== */
-.section {
-  padding: 3rem 0;
-  text-align: center;
-}
-
-.section__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.section__description {
-  max-width: 600px;
-  margin: auto;
-  color: #444;
-}
-
-/* ===== PROJECTS ===== */
-.projects__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.project__card {
-  background: #f5f5f5;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project__title {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-
-.button {
-  display: inline-block;
-  background: #ff9800;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.button:hover {
-  background: #e68900;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-}
-
-/* ===== ACESSIBILIDADE ===== */
-.opcoes-acessibilidade {
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.menu-acessibilidade {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-.contraste {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.contraste .section__description,
-.contraste .nav__link,
-.contraste .home__subtitle {
-  color: #fff !important;
-}
-
+</html>
