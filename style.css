@@ -1,15 +1,18 @@
-/* Reset */
-* {
+//* ================= RESET ================= */
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= BASE ================= */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f8f8fb;
   color: #222;
   line-height: 1.6;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 /* Container padrão */
@@ -19,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-/* Header e navegação */
+/* ================= HEADER ================= */
 .header {
   background-color: #5e2ca5;
   position: fixed;
@@ -82,7 +85,7 @@ body {
   padding-top: 70px;
 }
 
-/* Home */
+/* ================= HOME ================= */
 .home__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,7 +116,7 @@ body {
   border: 5px solid #5e2ca5;
 }
 
-/* Section Titles */
+/* ================= SECTIONS ================= */
 .section__title {
   font-size: 2rem;
   color: #5e2ca5;
@@ -129,7 +132,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Projects */
+/* ================= PROJECTS ================= */
 .projects__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -183,7 +186,7 @@ body {
   background-color: #7b3fe4;
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
 .contact .section__description a {
   color: #5e2ca5;
   font-weight: 600;
@@ -195,7 +198,7 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 .footer {
   background-color: #5e2ca5;
   color: white;
@@ -205,8 +208,65 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* ================= ACESSIBILIDADE ================= */
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
 
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 5px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #5e2ca5;
+  color: white;
+}
+
+.opcoes-acessibilidade button:hover {
+  background: #7b3fe4;
+}
+
+/* Alto contraste */
+.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.alto-contraste .header,
+.alto-contraste .footer,
+.alto-contraste .project__card,
+.alto-contraste .button {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #ffd700;
+}
+
+.alto-contraste .nav__link {
+  color: #ffd700 !important;
+}
+
+.alto-contraste .section__title,
+.alto-contraste .home__title {
+  color: #ffd700 !important;
+}
+
+/* ================= RESPONSIVE ================= */
 @media screen and (max-width: 768px) {
   .home__container {
     grid-template-columns: 1fr;
@@ -217,7 +277,8 @@ body {
     width: 200px;
     margin: 0 auto;
   }
-  
+}
+
   .nav__menu {
     display: none; /* Simples: esconder menu no mobile, você pode melhorar depois */
   }
