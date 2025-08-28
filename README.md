@@ -1,2 +1,2 @@
-# portfolio-arthur
+# site-arthur
 Meu portfólio pessoal feito em HTML e CSS.
