@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio - Arthur Lopes</title>
+  <title>Portfólio Arthur Lopes</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Botão de Acessibilidade -->
-  <div id="botao-acessibilidade" aria-label="Botão de Acessibilidade" aria-expanded="false" tabindex="0">
-    ⚙️
+  <!-- Menu de Acessibilidade -->
+  <div id="botao-acessibilidade" aria-label="Botão de Acessibilidade" aria-expanded="false" tabindex="0" class="menu-acessibilidade">
+      ⚙️
   </div>
 
   <ul id="opcoes-acessibilidade" class="opcoes-acessibilidade">
-    <li><button id="alterna-contraste" aria-pressed="false">Alto contraste</button></li>
-    <li><button id="aumentar-fonte">Aumentar fonte</button></li>
-    <li><button id="diminuir-fonte">Diminuir fonte</button></li>
+      <li><button id="alterna-contraste" aria-pressed="false" class="btn">Alto contraste</button></li>
+      <li><button id="aumentar-fonte" class="btn">Aumentar fonte</button></li>
+      <li><button id="diminuir-fonte" class="btn">Diminuir fonte</button></li>
   </ul>
 
   <!-- Header -->
@@ -45,7 +45,7 @@
           <p class="home__description">Tenho 17 anos, adoro futebol e estou sempre buscando aprender coisas novas.</p>
         </div>
         <div class="home__img">
-          <img src="imagens/arthur.jpg" alt="Foto do Arthur sorrindo" />
+          <img src="imagens/arthur.jpg" alt="Foto do Arthur" />
         </div>
       </div>
     </section>
@@ -53,9 +53,7 @@
     <!-- Sobre -->
     <section class="about section" id="sobre">
       <h2 class="section__title">Sobre mim</h2>
-      <p class="section__description">
-        Sou filho único, moro com meus pais e amo esportes, música e desafios.
-      </p>
+      <p class="section__description">Sou filho único, moro com meus pais e amo esportes, música e desafios.</p>
     </section>
 
     <!-- Projetos -->
@@ -67,7 +65,6 @@
           <p class="project__description">Um site simples mostrando minhas habilidades.</p>
           <a href="https://github.com/ArthurLF7/portfolio-arthur" target="_blank" class="button">Ver no GitHub</a>
         </article>
-        <!-- Mais projetos podem ser adicionados aqui -->
       </div>
     </section>
 
@@ -82,7 +79,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Arthur Lopes de Freitas | Feito com ♥</p>
+    <p>© 2025 Arthur Lopes de Freitas</p>
   </footer>
 
   <!-- Scripts -->
