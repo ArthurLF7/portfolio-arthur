@@ -1,7 +1,7 @@
 body {
-    background-color: #fff0f5;
-    color: #4b2e83;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #001f3f; /* Azul escuro */
+    color: #ffffff;
+    font-family: 'Arial Black', Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1rem;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #d78eb5;
+    background-color: #003366; /* Azul mais claro para contraste */
     padding: 20px 0;
     text-align: center;
 }
@@ -45,61 +45,65 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #b974a1;
+    background-color: #00509e;
 }
 
 .inicio h2,
 .sobre h2,
 .projetos h2,
 .contato h2 {
-    color: #cc0066;
+    color: #00bfff;
 }
 
 section h2::before {
-    content: "😈 ";
+    content: "🔥 ";
     margin-right: 5px;
 }
 
 section h2::after {
-    content: " 😴";
+    content: " 💡";
     margin-left: 5px;
 }
 
 section {
-    background-color: #fcefee;
+    background-color: #00264d;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 0 15px rgba(192, 149, 199, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 footer {
-    background-color: #d78eb5;
+    background-color: #003366;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     margin-top: 30px;
 }
 
+/* FOTO AJUSTADA */
 .foto {
-    width: 200px;
+    width: 250px; /* tamanho ideal */
+    height: 250px;
+    object-fit: cover;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px auto;
-    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 
 .foto:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(5deg) scale(1.05);
 }
 
+/* BOTÃO DE ACESSIBILIDADE */
 #botao-acessibilidade {
     position: fixed;
     top: 10px;
     left: 10px;
-    background: #d78eb5;
+    background: #00509e;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -121,7 +125,7 @@ footer {
     position: fixed;
     top: 60px;
     left: 10px;
-    background: #f8d7e3;
+    background: #004080;
     padding: 10px;
     border-radius: 8px;
     list-style: none;
@@ -133,7 +137,7 @@ footer {
 }
 
 .opcoes-acessibilidade button {
-    background: #d78eb5;
+    background: #00509e;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -142,13 +146,14 @@ footer {
     cursor: pointer;
     margin-bottom: 5px;
     transition: background 0.3s ease;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .opcoes-acessibilidade button:hover {
-    background: #b974a1;
+    background: #0074d9;
 }
 
+/* ALTO CONTRASTE */
 .alto-contraste {
     background-color: #000 !important;
     color: #FFD700 !important;
@@ -167,7 +172,9 @@ footer {
     background: #000 !important;
     color: #FFD700 !important;
 }
-  .nav__menu {
-    display: none; /* Simples: esconder menu no mobile, você pode melhorar depois */
-  }
+
+/* MENU RESPONSIVO (simples) */
+.nav__menu {
+    display: none;
 }
+
