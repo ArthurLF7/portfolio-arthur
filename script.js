@@ -41,11 +41,5 @@ ScrollReveal().reveal('#tropicalia', { delay: 500 });
 ScrollReveal().reveal('#galeria', { delay: 500 });
 ScrollReveal().reveal('#contato', { delay: 500 });
 
-.home__img img {
-  width: 250px;   /* Tamanho adequado */
-  height: auto;
-  border-radius: 50%; /* deixa circular, se quiser */
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+
 
